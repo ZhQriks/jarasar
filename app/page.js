@@ -3,7 +3,7 @@ export default function Home() {
   const blocks = [
     {
         title: 'Education',
-        description: 'none, trying US',
+        description: 'none',
     },
     {
         title: 'Favorite Quote',
