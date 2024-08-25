@@ -42,7 +42,7 @@ const ImageContainer = ({ src, onClick }) => (
 
 const items = [
   {
-    title: "Joined Zimran as a frontend engineer.",
+    title: "Joined Zimran as a frontend dev.",
     description:
       "One of the best development teams I've been on so far. Kind and business-oriented team",
     header: (
