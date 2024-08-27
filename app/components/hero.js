@@ -1,14 +1,16 @@
 "use client";
 
+import { IconLink } from "@tabler/icons-react";
 import { Projects } from "./projects";
 import { HeroHighlight, Highlight } from "./ui/hero-highlight";
+import { TextHoverEffect } from "./ui/text-hover-effect";
 import { motion } from "framer-motion";
 
 function Hero() {
   return (
     <div>
-      <HeroHighlight className=" max-w-[900px] mx-auto py-[100px] px-5">
-        <motion.h1
+      <HeroHighlight className=" max-w-[800px] py-[100px] min-h-[1000px]">
+        <motion.div
           initial={{
             opacity: 0,
             y: 20,
@@ -20,48 +22,74 @@ function Hero() {
           transition={{
             duration: 0.5,
             ease: [0.4, 0.0, 0.2, 1],
-          }}
-          className="text-xl px-4 md:text-3xl lg:text-4xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto ">
-          Hi, I&apos;m{" "}
-          <Highlight className="text-black dark:text-white">
-            Zharassar
-          </Highlight>
-        </motion.h1>
-        <motion.p
-          initial={{
-            opacity: 0,
-            y: 20,
-          }}
-          animate={{
-            opacity: 1,
-            y: [20, -5, 0],
-          }}
-          transition={{
-            duration: 0.5,
-            ease: [0.4, 0.0, 0.2, 1],
-          }}
-          className="text-md md:text-lg lg:text-xl text-center text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto mt-4">
-          I have been developing web applications professionally since I was 16
-          years old. I have passed bootcamps, and dozens of hackathons
-        </motion.p>
-        <motion.h2
-          initial={{
-            opacity: 0,
-            y: 20,
-          }}
-          animate={{
-            opacity: 1,
-            y: [20, -5, 0],
-          }}
-          transition={{
-            duration: 0.5,
-            ease: [0.4, 0.0, 0.2, 1],
-          }}
-          className="text-md px-4 md:text-xl lg:text-2xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto mt-4 mb-[24px]">
-          Here&apos;s everything I&apos;ve done so far:
-        </motion.h2>
-
-        <Projects className="mt-20" />
+          }}>
+          <div className="px-5">
+            <h1 className="text-[18px] font-medium font-bold text-neutral-700 dark:text-white leading-relaxed lg:leading-snug ">
+              Hi, I&apos;m Zharassar
+            </h1>
+            <p className="my-1 font-light text-[14px]">
+              Software Engineer • Laborer • Enthusiast
+            </p>
+            <p className="text-[16px] font-normal text-[#B2B2B2] max-w-4xl leading-relaxed lg:leading-snug mt-4">
+              I&apos;m currently working in a company called{" "}
+              <Highlight className="text-black dark:text-white">
+                Zimran
+              </Highlight>
+              . I&apos;m curious, I&apos;m interested in learning new
+              technologies, and I&apos;m open to talking to you guys
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-[50px]">
+              <div className="">
+                <p className="text-[14px] text-[#B2B2B2]">Working</p>
+                <a
+                  href="https://zimran.io"
+                  className="mt-5 flex gap-2 items-center text-[18px]">
+                  <p className="font-light border-b-[1px] border-[#B2B2B2] pb-[1px]">
+                    Zimran
+                  </p>
+                  <IconLink className="w-4 h-4 text-red-400 opacity-70" />
+                </a>
+                <p className="text-[16px] text-[#B2B2B2] mt-2">
+                  Crafting frontend. Building a leader in Ed-Tech
+                </p>
+              </div>
+              <div className="mt-4 md:mt-0">
+                <p className="text-[14px] text-[#B2B2B2]">Building</p>
+                <a
+                  href="https://github.com/zhqriks"
+                  className="mt-5 flex gap-2 items-center text-[18px]">
+                  <p className="font-light border-b-[1px] border-[#B2B2B2] pb-[1px]">
+                    Nothing to show yet
+                  </p>
+                  <IconLink className="w-4 h-4 text-red-400 opacity-70" />
+                </a>
+                <p className="text-[16px] text-[#B2B2B2] mt-2">
+                  Maybe some day I&apos;ll show you something
+                </p>
+              </div>
+            </div>
+            <div>
+              <a
+                href="https://zimran.io"
+                className="mt-[80px] flex gap-2 items-center text-[18px]">
+                <p className="font-medium">Contact me</p>
+              </a>
+              <p className="text-[#B2B2B2] mt-1 font-light text-[16px]">
+                I like cool ideas and crazy people
+              </p>
+              <p className="text-[#B2B2B2] mt-4 font-light text-[16px]">
+                Reach me at{" "}
+                <a href="https://t.me/jarasar" className="text-white">
+                  @jarasar
+                </a>{" "}
+                or{" "}
+                <a href="mailto:dauletjarasar@gmail.com" className="text-white">
+                  dauletjarasar@gmail.com
+                </a>
+              </p>
+            </div>
+          </div>
+        </motion.div>
       </HeroHighlight>
     </div>
   );
