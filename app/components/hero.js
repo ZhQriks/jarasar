@@ -69,11 +69,9 @@ function Hero() {
               </div>
             </div>
             <div>
-              <a
-                href="https://zimran.io"
-                className="mt-[80px] flex gap-2 items-center text-[18px]">
+              <div className="mt-[80px] flex gap-2 items-center text-[18px]">
                 <p className="font-medium">Contact me</p>
-              </a>
+              </div>
               <p className="text-[#B2B2B2] mt-1 font-light text-[16px]">
                 I like cool ideas and crazy people
               </p>
