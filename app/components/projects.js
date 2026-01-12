@@ -29,9 +29,24 @@ const ImageContainer = ({ src, onClick }) => (
 
 const items = [
   {
-    title: "Joined Zimran as a frontend dev.",
-    description:
-      "One of the best development teams I've been on so far. Kind and business-oriented team",
+    title: "alivepic.com",
+    description: "Bringing photos to life.",
+    header: <Skeleton />,
+    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "Joined Zimran as a frontend dev",
+    description: (
+      <div>
+        <p className="text-[10px] mb-1 text-neutral-500 uppercase tracking-widest">
+          Aug 2024 - Aug 2025
+        </p>
+        <p>
+          One of the best development teams I&apos;ve been on so far. Kind and
+          business-oriented team
+        </p>
+      </div>
+    ),
     header: (
       <ImageContainer
         onClick={() => {}}

@@ -31,7 +31,7 @@ function Hero() {
               Software Engineer • Laborer • Enthusiast
             </p>
             <p className="text-[16px] font-normal text-[#B2B2B2] max-w-4xl leading-relaxed lg:leading-snug mt-4">
-              I&apos;m currently working in a company called{" "}
+              I previously worked at a company called{" "}
               <Highlight className="text-black dark:text-white">
                 Zimran
               </Highlight>
@@ -40,7 +40,7 @@ function Hero() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-[50px]">
               <div className="">
-                <p className="text-[14px] text-[#B2B2B2]">Working</p>
+                <p className="text-[14px] text-[#B2B2B2]">Experience</p>
                 <a
                   href="https://zimran.io"
                   className="mt-5 flex gap-2 items-center text-[18px]">
@@ -49,22 +49,25 @@ function Hero() {
                   </p>
                   <IconLink className="w-4 h-4 text-red-400 opacity-70" />
                 </a>
+                <p className="text-[12px] text-[#B2B2B2] mt-1 uppercase tracking-wider">
+                  Aug 2024 - Aug 2025
+                </p>
                 <p className="text-[16px] text-[#B2B2B2] mt-2">
-                  Crafting frontend. Building a leader in Ed-Tech
+                  Crafting frontend for a leader in Ed-Tech.
                 </p>
               </div>
               <div className="mt-4 md:mt-0">
                 <p className="text-[14px] text-[#B2B2B2]">Building</p>
                 <a
-                  href="https://github.com/zhqriks"
+                  href="https://alivepic.com"
                   className="mt-5 flex gap-2 items-center text-[18px]">
                   <p className="font-light border-b-[1px] border-[#B2B2B2] pb-[1px]">
-                    Nothing to show yet
+                    alivepic.com
                   </p>
                   <IconLink className="w-4 h-4 text-red-400 opacity-70" />
                 </a>
                 <p className="text-[16px] text-[#B2B2B2] mt-2">
-                  Maybe some day I&apos;ll show you something
+                  Bringing photos to life.
                 </p>
               </div>
             </div>
