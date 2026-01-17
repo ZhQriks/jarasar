@@ -8,9 +8,10 @@ import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <div>
-      <HeroHighlight className=" max-w-[800px] py-[100px] min-h-[1000px]">
+    <div className="overflow-hidden">
+      <HeroHighlight className="py-[100px] min-h-[1000px]">
         <motion.div
+          className="max-w-[800px]"
           initial={{
             opacity: 0,
             y: 20,
@@ -67,7 +68,7 @@ function Hero() {
                   <IconLink className="w-4 h-4 text-red-400 opacity-70" />
                 </a>
                 <p className="text-[16px] text-[#B2B2B2] mt-2">
-                  Bringing photos to life.
+                  Building the future of visual storytelling.
                 </p>
               </div>
             </div>
@@ -91,6 +92,7 @@ function Hero() {
             </div>
           </div>
         </motion.div>
+      <div className="running-horses" />
       </HeroHighlight>
     </div>
   );

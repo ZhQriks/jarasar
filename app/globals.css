@@ -25,3 +25,29 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.running-horses {
+  width: 100vw;
+  height: 500px;
+  background-image: url("/horses-silhouette-wide-trans.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  z-index: 0;
+  pointer-events: none;
+  
+  /* Break out of container */
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: -40px;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  opacity: 0.35;
+}
+
+@media (max-width: 768px) {
+  .running-horses {
+    height: 300px;
+  }
+}
