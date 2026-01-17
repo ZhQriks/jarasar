@@ -81,11 +81,11 @@ function Hero() {
               </p>
               <p className="text-[#B2B2B2] mt-4 font-light text-[16px]">
                 Reach me at{" "}
-                <a href="https://t.me/jarasar" className="text-white">
+                <a href="https://t.me/jarasar" className="dark:text-white text-black">
                   @jarasar
                 </a>{" "}
                 or{" "}
-                <a href="mailto:dauletjarasar@gmail.com" className="text-white">
+                <a href="mailto:dauletjarasar@gmail.com" className="dark:text-white text-black">
                   dauletjarasar@gmail.com
                 </a>
               </p>
