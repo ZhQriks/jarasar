@@ -53,7 +53,7 @@ function Hero() {
                 <p className="text-[12px] text-[#B2B2B2] mt-1 uppercase tracking-wider">
                   Aug 2024 - Aug 2025
                 </p>
-                <p className="text-[16px] text-[#B2B2B2] mt-2">
+                <p className="text-[16px] text-[#B2B2B2] mt-2 max-w-[200px]">
                   Crafting frontend for a leader in Ed-Tech.
                 </p>
               </div>
@@ -67,8 +67,23 @@ function Hero() {
                   </p>
                   <IconLink className="w-4 h-4 text-red-400 opacity-70" />
                 </a>
-                <p className="text-[16px] text-[#B2B2B2] mt-2">
-                  Building the future of visual storytelling.
+                <p className="text-[16px] text-[#B2B2B2] mt-2 max-w-[200px]">
+                  Giving new life to black and white photos.
+                </p>
+                
+              </div>
+              <div className="mt-4 md:mt-0">
+                <p className="invisible text-[14px] hidden md:block ">Spacer</p>
+                <a
+                  href="https://gymguru.io"
+                  className="mt-5 flex gap-2 items-center text-[18px]">
+                  <p className="font-light border-b-[1px] border-[#B2B2B2] pb-[1px]">
+                    gymguru.io
+                  </p>
+                  <IconLink className="w-4 h-4 text-red-400 opacity-70" />
+                </a>
+                <p className="text-[16px] text-[#B2B2B2] mt-2 max-w-[200px]">
+                  AI workout planner.
                 </p>
               </div>
             </div>
